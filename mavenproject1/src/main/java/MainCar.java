@@ -13,59 +13,30 @@ public class MainCar
     public static void main(String[] args) 
     {
 
-		CarClass c = new CarClass();
-                c.Car(2010,"200");
-                        
-		System.out.println("Car year: "+c.getYear());
+	CarClass c = new CarClass(2014, "Ford", 0);
+                
+	System.out.println("Car year: "+c.getYear());
 
-		System.out.println("Car make: "+c.getMake());
+	System.out.println("Car make: "+c.getMake());
 
-		System.out.println("Car speed: "+c.getSpeed());
+	System.out.println("Car speed: "+c.getSpeed());
 
-		c.accelerate();
+	c.accelerate();
+            System.out.println (c.getSpeed ());
+	c.accelerate();
+            System.out.println (c.getSpeed ());
+        c.accelerate();
+            System.out.println (c.getSpeed ());
+        c.accelerate();
+            System.out.println (c.getSpeed ());
+        c.accelerate();
+            System.out.println (c.getSpeed ());
 
-		c.accelerate();
+	System.out.println("Car year: "+c.getYear());
 
-		System.out.println("Car year: "+c.getYear());
+	System.out.println("Car make: "+c.getMake());
 
-		System.out.println("Car make: "+c.getMake());
-
-		System.out.println("Car speed: "+c.getSpeed());
+	System.out.println("Car speed: "+c.getSpeed());
     }
 }
 
-
-//ignore example here vvvv
-int yearModel;
-
-        String make;
-
-        
-
-        BuildCar carBuild = new BuildCar();
-
-            carBuild.CarBuild(2014, "200");
-
-            
-
-        for(int i = 0; i < 5; i++) {
-
-            carBuild.accelerate();
-
-            System.out.println(carBuild.getSpeed());
-
-        }
-
-        
-
-        for(int i = 0; i < 5; i++) {
-
-            carBuild.brake();
-
-            System.out.println(carBuild.getSpeed());
-
-        }
-
-        
-
-    }
